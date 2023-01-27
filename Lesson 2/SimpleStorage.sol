@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.8; // all versions between work ^0.8.7 (most stable versions and higher)
+// also possible f.e. >=0.8.0 <0.9.0;
 
 /* Boolean – true/false, 
 uint – whole numbers non-negative, 
