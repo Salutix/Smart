@@ -17,7 +17,7 @@ contract SimpleStorage {
     
 
     mapping(string => uint256) public nameToFavoriteNumber; //mapping is kind of dictionary
-    // data structure where key is "mapped" to a single value. In our case name is mapped to spec.num.
+    // data structure where key is "mapped" to a single value. In our case name is mapped to specific number
 
     struct People {
         uint256 favoriteNumber;
