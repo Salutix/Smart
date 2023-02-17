@@ -5,12 +5,13 @@ const fs = require("fs");
 
 async function main() {
   // compile them in our code or compile them separately
-  // http://127.0.0.1:7545
+  // http://192.168.208.1:7545 - have to change server in Ganache to WSL!!!
+  // version of ethers 5.6.2 - via (yarn add ethers@5.6.2)!!!
   const provider = new ethers.providers.JsonRpcProvider(
-    "http://127.0.0.1:7545"
+    "http://192.168.208.1:7545"
   );
   const wallet = new ethers.Wallet(
-    "dc180ea145eb826d394cff6a6f4d87c8adf6265ceeb6c2ca5ebc3523acffd7ef", // no real pr keys!!
+    "41355f8e89ae3c9d0bfa974806466773bb4b9c58aa5c0be18f15460c5f6a093e", // no real pr keys!!
     provider
   );
   const abi = fs.readFileSync("./SimpleStorage_sol_SimpleStorage.abi", "utf8");
