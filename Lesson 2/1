@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: MIT 
+// Cверху лицензия. 
+
+// Зелёный цвет - комментарии,
+// программа их не считывает.
+
+pragma solidity ^0.8.8;
+// Версия языка программирования Solidity.
+
+// Cоздаём объект - Хранилище
+contract BriefTasche { 
+
+    // uint - ganze Zahlen nicht-negativ
+    // по умолчанию равно 0.
+    uint liebsteNummer;
+
+// Функция, которая меняет значение
+// "libsteNummer" на новое значение,
+// которое задаётся пользователем.
+    function behalten(uint _liebsteNummer)
+    public {
+    liebsteNummer = _liebsteNummer;
+    }
+
+}
